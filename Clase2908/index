@@ -50,7 +50,7 @@
         </div>
             <h3>Audio</h3>
             <audio controls autoplay muted loop>
-                <source src="Clase2908\files\9. PLAK - Victor Mendivil x _HUPE (Visualizer Oficial) [PupddcQGq1Q].mp3" type="audio/mp3">
+                <source src="./files/cancion.mp3" type="audio/mp3">
             </audio>
         <div>
 
