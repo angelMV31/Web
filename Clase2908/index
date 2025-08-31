@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Listas y Multimedia</title>
+    </head>
+    <body>
+        <div>
+        <h2>Listas</h2>
+        <h3>Lista no ordenada</h3>
+        <ul>
+            <li>Elemento 1 de la lista no ordenada</li>
+            <li>Elemento 2 de la lista no ordenada</li>
+            <li>Elemento 3 de la lista no ordenada</li>
+        </ul>
+        </div>
+        <div>
+        <h2>Listas</h2>
+        <h3>Lista ordenadas</h3>
+        <ol>
+            <li>Elemento 1 de la lista ordenada</li>
+            <li>Elemento 2 de la lista ordenada</li>
+            <li>Elemento 3 de la lista ordenada</li>
+        </ol>
+        </div>
+
+        <div>
+        <h3>Lista de terminos</h3>
+        <dl>
+            <dt>Termino 1</dt>
+            <dd>Definicion del termino 1</dd>
+            <dt>Termino 2</dt>
+            <dd>Definicion del termino 2</dd>
+        </dl>
+        </div>
+
+        <div>
+        <h2>Imagenes y Multimedia</h2>
+        <div>
+            <figure>
+            <img
+            src="https://images.hdqwalls.com/download/cute-pikachu-6o-3840x2160.jpg"
+            width="250px"
+            title="Pikachu"
+            alt="Imagen de pikachu"
+            />
+            <figcaption>Imagen de un pikachu por que el yona no me dejo usar el goku </figcaption>
+            </figure>
+        </div>
+            <h3>Audio</h3>
+            <audio controls autoplay muted loop>
+                <source src="Clase2908\files\9. PLAK - Victor Mendivil x _HUPE (Visualizer Oficial) [PupddcQGq1Q].mp3" type="audio/mp3">
+            </audio>
+        <div>
+
+        <div>
+            <h3>Video</h3>
+            <video controls autoplay muted loop poster="" preload="auto" width="300">
+                <source src="./files/videopara web.mp4" type="video/mp4">
+                <track src=""></track>
+            </video>
+        </div>
+            <h3>Marco embebido</h3>
+            <iframe width="300" src="https://www.youtube.com/embed/IATUT2qzDmU?si=UZuHnRUPd8-F5sE9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <h3>Sitio embebido</h3>
+            <iframe src="https://enlinea2025-2.uabcs.mx/" 
+            frameborder="0"
+            width="355"
+            height="355"
+            ></iframe>
+        </div>
+
+        <div>
+            <h2>Tablas</h2>
+            <table border="2" cellpadding="5" cellspacing="15" width="90%">
+                <caption>Ejemplo de tabla</caption>
+                <thead>
+                    <tr>
+                        <th colspan="3">Encabezado 1</th>
+                        <th rowspan="2">Encabezado 2</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Subencabezado 1</th>
+                        <th>Subencabezado 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                        <td>Celda 3</td>
+                    </tr>
+                    <tr>
+                        <td>Celda 4</td>
+                        <td>Celda 5</td>
+                        <td>Celda 6</td>
+                    </tr>
+                    <tr>
+                        <td>Celda 7</td>
+                        <td>Celda 8</td>
+                        <td>Celda 9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <br><br><br><br><br>
+    </body>
+    </html>
