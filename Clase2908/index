@@ -107,6 +107,19 @@
                 </tbody>
             </table>
         </div>
+
+        <div>
+            <h2>Formularios</h2>
+            <form accion = "gracias.html" method="get">
+                <input type="text" name="nombre" value="Angel" placeholder="Ingresa tu nombre" required disabled><br>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
+                <input type="text" name="nombre" value="Angel" placeholder="Ingresa tu nombre" required readonly><br>
+                <input type="password" name="contra" placeholder="Ingresa tu Contraseña" required><br>
+                <input type="email" name="email" placeholder="Ingresa tu Email" required><br>
+                <textarea cols="50" rows="15" placeholder="Ingresa la descripción"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
         </div>
         <br><br><br><br><br>
     </body>
