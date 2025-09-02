@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Listas y Multimedia</title>
+        <title>Listas y Multimedias</title>
     </head>
     <body>
         <div>
@@ -110,15 +110,26 @@
 
         <div>
             <h2>Formularios</h2>
-            <form accion = "gracias.html" method="get">
-                <input type="text" name="nombre" value="Angel" placeholder="Ingresa tu nombre" required disabled><br>
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
-                <input type="text" name="nombre" value="Angel" placeholder="Ingresa tu nombre" required readonly><br>
-                <input type="password" name="contra" placeholder="Ingresa tu Contraseña" required><br>
-                <input type="email" name="email" placeholder="Ingresa tu Email" required><br>
-                <textarea cols="50" rows="15" placeholder="Ingresa la descripción"></textarea><br>
-                <button type="submit">Enviar</button>
-            </form>
+            <fieldset>
+                <legend>Información básica</legend>
+                <form action = "gracias.html" method="post">
+                    <input type="text" name="nombre" value="Angel" placeholder="Ingresa tu nombre" required disabled><br>
+                    <label for="nombre">Nombre completo</label><br>
+                    <input id= "nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
+                    <input type="text" name="nombre" value="Angel" placeholder="Ingresa tu nombre" required readonly><br>
+                    <input type="password" name="contra" placeholder="Ingresa tu Contraseña" required><br>
+                    <input type="email" name="email" placeholder="Ingresa tu Email" required><br>
+                    <textarea cols="50" rows="15" placeholder="Ingresa la descripción"></textarea><br>
+                    <select name="pais">
+                        <option value="México">México</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                    </select><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </fieldset>
+
+            
         </div>
         </div>
         <br><br><br><br><br>
