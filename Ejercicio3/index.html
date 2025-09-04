@@ -27,7 +27,7 @@
                 </div>
                 </header>
 
-                <section>
+                <article>
                 <div id="Serie Final">
                     <h2>Serie final</h2>
                     <p>Se jugo la serie final en Houston, donde los Astros en localia, se llevaron la <mark>victoria</mark> y asi el
@@ -38,7 +38,9 @@
                     </p>
                     <br><hr> 
                 </div>
-
+                </article>
+                
+                <section>
                 <div id="Estadisticas">
                     <h2>Estadisticas</h2>
                     <p>
@@ -58,7 +60,6 @@
                 </div>
                 </section>
 
-                <article>
                 <div id="Yankees">
                     <h2>Yankees</h2>
                     <p><u>Los Yankees de Nueva York</u> son uno de los equipos más emblemáticos y exitosos en la historia de las 
@@ -261,7 +262,6 @@
                     </div>
 
                 </div> <br><hr>
-                </article>
 
                 <aside>
                 <div id="Texto Preformateado">
@@ -303,7 +303,47 @@
 
         <footer>
             <div id="Más">
-                    <h2>Más sobre el mundo del beisbol MLB</h2>
+                    <h2>Más sobre el mundo del béisbol MLB</h2>
+                    <div>
+                    <h3>Si quieres mantenerte notificado de todo hacerca del rey de los deportes, registrate en el siguiente formulario</h3>
+                    <fieldset>
+                        <legend>Formulario de regístro</legend>
+                        <form action = "gracias.html" method="post">
+                            <label for="nombre">Nombre completo</label><br>
+                            <input id= "nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
+                            <label for="edad">Nombre completo</label><br>
+                            <input id= "edad" type="number" name="edad" placeholder="Ingresa tu edad" required><br>
+                            <label for="email">Ingresa tu correo</label><br>
+                            <input type="email" name="email" placeholder="Ingresa tu correo" required><br>
+                            <label for="password">Ingresa tu contraseña</label><br>
+                            <input type="password" name="password" placeholder="Ingresa tu contraseña" required><br>
+                            <label for="pais">Selecciona tu país</label><br>
+                            <select id="pais" name="pais">
+                                <optgroup label="América">
+                                    <option value="México">México</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                </optgroup>
+                                <optgroup label="Europa">
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="España">España</option>
+                                    <option value="Francia">Francia</option>
+                                </optgroup>
+                            </select><br>
+                            <label for="equipo">Elige tu equipo favorito</label><br>
+                            <input id="equipo" list="equipos" name="equipo"><br>
+                            <datalist id="equipos">
+                                <option value="Boston"></option>
+                                <option value="Yankees"></option>
+                                <option value="Astros"></option>
+                                <option value="Dodgers"></option>
+                            </datalist>
+                            <label for="description">Deja tus comentarios de la página</label><br>
+                            <textarea id="description" cols="50" rows="15" placeholder="Comentarios..."></textarea><br>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </fieldset>     
+                </div>
                     <h3><a href="https://www.mlb.com/es" target="_blank">Página oficial de MLB</a></h3>
                     <address>
                         Contacto: <a href="mailto:angelmenvillacio@gmail.com">angelmenvillacio@gmail.com</a>
