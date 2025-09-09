@@ -1,7 +1,78 @@
-* {
-    line-height: 1.5;
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-p, article, section, aside {
+* {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-family: Georgia, serif;
+    border-bottom: 3px solid red;
+    padding: 10px;
+}
+
+p {
     text-align: justify;
+    font-size: 16px;
+    color: #333;
+    margin: 25px;
+}
+
+.titulo-seccion {
+    background-color: #004080; 
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.resaltado {
+    color: crimson;
+    font-weight: bold;
+}
+
+#Estadisticas {
+    border: 2px;
+    padding: 10px;
+    margin: 25px;
+}
+
+#Yankees {
+    border: 2px solid #990000;
+    padding: 10px;
+    margin: 25px;
+}
+
+#Astros {
+    border: 2px solid #cc7a00;
+    padding: 10px;
+    margin: 25px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+}
+
+table th {
+    background-color: #004080;
+    color: white;
+    padding: 8px;
+}
+
+table td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
 }
