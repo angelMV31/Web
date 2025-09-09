@@ -1,0 +1,7 @@
+* {
+    line-height: 1.5;
+}
+
+p, article, section, aside {
+    text-align: justify;
+}
