@@ -9,15 +9,16 @@ body {
     background-color: lightgray;
 }
 
-#menu {
-    border: 2px solid blue;
-    margin: 25px;
+.menu {
+    padding: 0%;
+    margin: 15px;
 }
 
 h1 {
     color: darkblue;
     text-align: center;
     font-family: Georgia, serif;
+    padding: 0%;
     border-bottom: 3px solid red;
 }
 
@@ -106,4 +107,47 @@ footer {
 .img-mlb {
     width: 50px;
     height: 50px;
+}
+
+form {
+    margin: 8% auto;
+    max-width: 400px;
+    padding: 20px;
+    background: lightblue;
+    border-radius: 10%;
+    box-shadow: 0 4px 8% rgba(0, 0, 0, 0.6);
+    border-color: #000;
+}
+
+button {
+    width: 20%;
+    border-radius: 20%;
+    background: lightcoral;
+}
+
+.title-registro {
+    font-size: 20px;
+    background: transparent;
+}
+
+.title-registro::before {
+    content: "⚾";
+}
+
+.title-registro::after {
+    content: " - por favor llena todos los campos";
+    color: red;
+    font-size: 16px;
+}
+
+p::first-letter {
+    font-size: 40px;
+}
+
+.copy::first-letter {
+    color: blue;
+}
+
+input, textarea, label, select {
+    background: transparent;
 }

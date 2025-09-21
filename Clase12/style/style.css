@@ -1,15 +1,56 @@
 body {
     font-size: 20px;
-}
-
-.red background{
-    background: red;
-}
-
-.box {
-
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    background: lightblue;
 }
 
 p {
     background: orange;
+}
+
+form {
+    margin: 8% auto;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 10%;
+    box-shadow: 0 4px 8% rgba(0, 0, 0, 0.6);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background: #ccc;
+}
+
+h3::before {
+    content: "🥵";
+}
+
+h3::after {
+    content: " - por favor llena todos los campos";
+    color: blue;
+    font-size: 16px;
+}
+
+p::first-line {
+    color: red;
+}
+
+/*para mi el yona no vale vrg*/
+p::first-letter {
+    color: white;
+    font-size: 40px;
 }

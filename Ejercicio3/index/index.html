@@ -21,14 +21,14 @@
 
                     <nav id="menu">
                         <h2>Menú de navegación</h2>
-                        <a href="#Serie Final">Ir a Serie Final</a> <br>
-                        <a href="#Estadisticas">Ir a Estadísticas</a> <br>
-                        <a href="#Yankees">Ir a Yankees</a> <br>
-                        <a href="#Astros">Ir a Astros</a> <br>
+                        <a href="#Serie Final">Ir a Serie Final</a>
+                        <a href="#Estadisticas">Ir a Estadísticas</a>
+                        <a href="#Yankees">Ir a Yankees</a>
+                        <a href="#Astros">Ir a Astros</a>
                         <a href="#Multimedia">Ir a imágenes y videos</a>
-                        <a href="#Texto Preformateado">Ir a Texto Preformateado</a> <br>
+                        <a href="#Texto Preformateado">Ir a Texto Preformateado</a>
                         <a href="#Más">Ir a Más</a>
-                        <br><hr>
+                        <hr>
                     </nav>
 
                     </div>
@@ -316,14 +316,15 @@
                     <fieldset>
                         <legend>Formulario de regístro</legend>
                         <form action = "gracias.html" method="post">
+                            <h3 class="title-registro">Información personal</h3><br>
                             <label for="nombre">Nombre completo</label><br>
-                            <input id= "nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
+                            <input id= "nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
                             <label for="edad">Ingresa tu edad</label><br>
-                            <input id= "edad" type="number" name="edad" placeholder="Ingresa tu edad" required><br>
+                            <input id= "edad" type="number" name="edad" placeholder="Ingresa tu edad" required><br><br>
                             <label for="email">Ingresa tu correo</label><br>
-                            <input type="email" name="email" placeholder="Ingresa tu correo" required><br>
+                            <input type="email" name="email" placeholder="Ingresa tu correo" required><br><br>
                             <label for="password">Ingresa tu contraseña</label><br>
-                            <input type="password" name="password" placeholder="Ingresa tu contraseña" required><br>
+                            <input type="password" name="password" placeholder="Ingresa tu contraseña" required><br><br>
                             <label for="pais">Selecciona tu país</label><br>
                             <select id="pais" name="pais">
                                 <optgroup label="América">
@@ -336,7 +337,7 @@
                                     <option value="España">España</option>
                                     <option value="Francia">Francia</option>
                                 </optgroup>
-                            </select><br>
+                            </select><br><br>
                             <label for="equipo">Elige tu equipo favorito</label><br>
                             <input id="equipo" list="equipos" name="equipo"><br>
                             <datalist id="equipos">
@@ -344,7 +345,7 @@
                                 <option value="Yankees"></option>
                                 <option value="Astros"></option>
                                 <option value="Dodgers"></option>
-                            </datalist>
+                            </datalist><br>
                             <label for="description">Deja tus comentarios de la página</label><br>
                             <textarea id="description" cols="50" rows="15" placeholder="Comentarios..."></textarea><br>
                             <button type="submit">Enviar</button>
@@ -354,7 +355,7 @@
                     <h3><a href="https://www.mlb.com/es" target="_blank">Página oficial de MLB</a></h3>
                     <address>
                         Contacto: <a href="mailto:angelmenvillacio@gmail.com">angelmenvillacio@gmail.com</a>
-                        <p>&copy; 2025 BeisbolWeb</p>
+                        <p class="copy">&copy; 2025 BeisbolWeb</p>
                     </address>
                 </div>
         </footer>
