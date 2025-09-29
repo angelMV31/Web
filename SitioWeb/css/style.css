@@ -1,3 +1,25 @@
+:root {
+  --color-primario: #1c2d66;
+  --color-secundario: #0a1845;
+  --color-acento: orange;
+  --color-acento-hover: darkorange;
+  --color-texto: #222;
+  --color-fondo: #fff;
+  --color-footer: #1c2d66;
+  --color-footer-link: #ffdb70;
+  --color-borde: #0a1a44;
+  --color-sombra: rgba(0, 0, 0, 0.2);
+  --espaciado-pequeño: 8px;
+  --espaciado-medio: 15px;
+  --espaciado-grande: 40px;
+  --fuente-base: Arial, sans-serif;
+  --linea-base: 1.6;
+  --radio-boton: 20px;
+  --radio-tarjeta: 15px;
+  --radio-form: 12px;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +27,23 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #222;
-  background: #fff;
+  font-family: var(--fuente-base);
+  line-height: var(--linea-base);
+  color: var(--color-texto);
+  background: var(--color-fondo);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background: white;
+  padding: var(--espaciado-medio) calc(var(--espaciado-medio) * 2);
+  background: var(--color-fondo);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header .logo img {
-  width: 70px;
+  width: 71px;
 }
 
 nav {
@@ -35,9 +57,9 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background: white;
+  background: var(--color-fondo);
   width: 200px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px var(--color-sombra);
   border-radius: 5px;
   list-style: none;
   padding: 0;
@@ -61,9 +83,9 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  background: #1c2d66;
+  background: var(--color-primario);
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: var(--radio-boton);
   font-weight: bold;
   transition: background 0.3s;
 }
@@ -75,19 +97,19 @@ nav ul li:hover .sub-link {
 .sub-link li a {
   display: block;
   padding: 10px 15px;
-  color: #1c2d66;
-  background: #fff;
+  color: var(--color-primario);
+  background: var(--color-fondo);
   border-radius: 0;
 }
 
 .sub-link li a:hover {
   background: #f0f0f0;
-  color: #0a1845;
+  color: var(--color-secundario);
 }
 
 .buscar input {
   padding: 5px 12px;
-  border-radius: 20px;
+  border-radius: var(--radio-boton);
   border: 1px solid #ccc;
   outline: none;
 }
@@ -99,21 +121,21 @@ nav ul li:hover .sub-link {
 }
 
 main {
-  padding: 40px;
+  padding: var(--espaciado-grande);
   text-align: center;
 }
 
 main h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: var(--espaciado-medio);
 }
 
 .contenido {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
-  margin-top: 20px;
+  gap: calc(var(--espaciado-medio) * 2);
+  margin-top: var(--espaciado-medio);
 }
 
 .texto {
@@ -142,7 +164,7 @@ main h1 {
 
 .btn {
   margin-top: 15px;
-  background: orange;
+  background: var(--color-acento);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -153,20 +175,20 @@ main h1 {
 }
 
 .btn:hover {
-  background: darkorange;
+  background: var(--color-acento-hover);
 }
 
 .card-container {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin: 40px 0;
+  margin: var(--espaciado-grande) 0;
   flex-wrap: wrap;
 }
 
 .tarjeta {
-    background: white;
-    border-radius: 15px;
+    background: var(--color-fondo);
+    border-radius: var(--radio-tarjeta);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     overflow: hidden;
@@ -185,7 +207,7 @@ main h1 {
 }
 
 .tarjeta .contenido {
-  padding: 15px;
+  padding: var(--espaciado-medio);
   margin: 5%;
   display: flex;
   flex-direction: column;
@@ -202,11 +224,11 @@ main h1 {
 
 .tarjeta .descripcion {
   font-size: 0.9rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .tarjeta .boton {
-  background: #1c2d66;
+  background: var(--color-primario);
   color: white;
   border: none;
   padding: 10px;
@@ -216,13 +238,13 @@ main h1 {
 }
 
 .tarjeta .boton:hover {
-  background: #0a1845;
+  background: var(--color-secundario);
 }
 
 footer {
-  background: #1c2d66;
+  background: var(--color-footer);
   color: white;
-  padding: 40px;
+  padding: var(--espaciado-grande);
   text-align: center;
 }
 
@@ -238,25 +260,25 @@ footer form {
 
 footer input, footer select, footer textarea, footer button {
   width: 100%;
-  padding: 8px;
-  margin: 8px 0;
+  padding: var(--espaciado-pequeño);
+  margin: var(--espaciado-pequeño) 0;
   border-radius: 5px;
   border: none;
 }
 
 footer button {
-  background: orange;
+  background: var(--color-acento);
   color: white;
   font-weight: bold;
   cursor: pointer;
 }
 
 footer button:hover {
-  background: darkorange;
+  background: var(--color-acento-hover);
 }
 
 footer a {
-  color: #ffdb70;
+  color: var(--color-footer-link);
   text-decoration: none;
 }
 
@@ -273,10 +295,10 @@ form {
     margin: 8% auto;
     max-width: 400px;
     padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 2px solid #0a1a44;
+    background: var(--color-fondo);
+    border-radius: var(--radio-form);
+    box-shadow: 0 4px 12px var(--color-sombra);
+    border: 2px solid var(--color-borde);
 }
 
 form textarea, form input, form select {
@@ -284,7 +306,7 @@ form textarea, form input, form select {
     box-sizing: border-box;
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #0a1a44;
+    border: 1px solid var(--color-borde);
     border-radius: 6px;
     font-size: 14px;
     resize: vertical;
@@ -293,7 +315,7 @@ form textarea, form input, form select {
 .title-registro {
     font-size: 20px;
     font-weight: bold;
-    color: #0a1a44;
+    color: var(--color-borde);
     background: transparent;
 }
 
