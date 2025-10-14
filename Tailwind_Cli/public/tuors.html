@@ -9,256 +9,114 @@
         <link href="../src/css/style.css" rel="stylesheet">
     </head>
 
-    <body>
-        <header>
-        <div class="logo">
-          <img src="../src/files/logo.png" alt="Logo Faby Tours">
-        </div>
+    <body class="font-serif text-[#222] bg-white leading-relaxed">
+        <header class="flex items-center gap-6 p-4">
+  
+  <div class="flex justify-center items-center">
+    <img
+      src="../src/files/logo.png"
+      alt="Logo Faby Tours"
+      class="object-contain rounded-full border-[#1c2d66]"
+      style="width: 60px; height: 60px;"
+    />
+  </div>
 
-        <nav>
-        <ul class="nav-link">
-            <li><a href="index.html" class="activo">Inicio</a></li>
-            <li><a>Experiencias</a>
-            <ul class="sub-link">
-                <li><a href="tuors.html">Tuor's</a></li>
-                <li><a>Opiniones</a></li>
-                <li><a href="experience.html">Registro</a></li>
-            </ul>
-            </li>
-            <li><a href="#">Contactos</a></li>
+  <label for="menu-toggle"
+  class="bg-[#0a1a44] hover:bg-[#162970] text-white text-2xl rounded-full px-3 py-1 mt-4 cursor-pointer shadow-md lg:hidden flex items-center justify-center transition-colors duration-300">
+  ☰
+    </label>
+  
+  <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+  <nav
+    class="fixed top-1/2 left-24 transform -translate-y-1/2 flex-col items-center bg-[#0a1a44] text-white rounded-xl shadow-lg peer-checked:flex hidden lg:flex transition-all duration-300">
+    <ul class="flex flex-col divide-y divide-[#0d1a4f]/60">
+      <li>
+        <a href="index.html"
+          class="block py-3 font-semibold hover:bg-[#22378a] rounded-t-2xl transition">Inicio</a>
+      </li>
+      <li class="relative group">
+        <a
+          class="block py-3 font-semibold bg-[#172558] rounded-none cursor-pointer transition">Experiencias</a>
+      
+        <ul
+          class="absolute left-full top-1/2 -translate-y-1/2 hidden group-hover:flex flex-col bg-white text-[#1c2d66] rounded-lg shadow-lg w-40 text-left transition-all duration-300">
+          <li><a href="tuors.html" class="px-4 py-2 hover:bg-gray-100 rounded-md">Tuor's</a></li>
+          <li><a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-md">Opiniones</a></li>
+          <li><a href="experience.html" class="px-4 py-2 hover:bg-gray-100 rounded-md">Registro</a></li>
         </ul>
-        <div class="buscar">
-            <input type="text" placeholder="Buscar...">
-        </div>
-        </nav>
-    </header>
-
+      </li>
+      <li>
+        <a href="#" class="block py-3 font-semibold hover:bg-[#22378a] rounded-b-2xl transition">Contactos</a>
+      </li>
+    </ul>
+  </nav>
+</header>
     <section class="hero">
-        <img src="../src/files/fondo.jpg" alt="Lancha en la playa">
+        <img src="../src/files/fondo.jpg" alt="Lancha en la playa" class="w-full h-40 object-cover">
     </section>
 
         <br><br>
         
-        <main>
-            <div class="grid-container">
-                <h1>Tipos de Tours</h1>
-                <section class="card-container">
-                    <div class="tarjeta">
-                        <img 
-                        src="../src/files/tour1.jpg" 
-                        alt="Tour2"
-                        >
-                        <div class="contenido">
-                            <h2 class="titulo">Pesca en laguna o río</h2>
-                            <p class="descripcion">
-                                Un tour tranquilo y familiar en aguas interiores, ideal para principiantes o quienes buscan relajarse mientras disfrutan del paisaje natural.
-                            </p>
-                            <button class="boton">
-                                Rentar Ahora
-                            </button>
-                            <br>
-                            
-                        </div>
-                    </div>
+        <main class="px-6 py-12 text-center">
+                <h1 class="text-3xl font-bold text-[#1c2d66] mb-10">Tipos de Tours</h1>
+                <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                     
-                    <div class="tarjeta">
-                        <img 
-                    src="../src/files/tour2.jpg" 
-                    alt="Tour2"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca de dorado</h2>
-                    <p class="descripcion">
-                        Embárcate en la búsqueda del codiciado pez dorado, famoso por su fuerza y espectacular salto, una experiencia imperdible para los amantes de la pesca deportiva.
-                    </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
-                    <br>
-                    
-                </div>
-            </div>
-            
-            <div class="tarjeta">
-                <img 
-                src="../src/files/tour3.jpg" 
-                alt="Tour3"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca deportiva en alta mar</h2>
-                    <p class="descripcion">
-                        Vive la emoción de atrapar especies grandes como marlín y pez vela en aguas profundas, acompañado de equipo profesional y guías expertos.
-                    </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
-                    <br>
-                    
-                </div>
-            </div>
-            <div class="tarjeta">
-                <img 
+            <div class="card w-80 bg-white shadow-xl border border-[#0a1a44]/30">
+                <figure><img 
                 src="../src/files/tour1.jpg" 
                 alt="Tour2"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca en laguna o río</h2>
-                    <p class="descripcion">
+                class="h-48 w-full object-cover"
+                ></figure>
+                <div class="card-body text-left">
+                    <h2 class="card-title text-[#1c2d66]">Pesca en laguna o río</h2>
+                    <p class="text-sm">
                         Un tour tranquilo y familiar en aguas interiores, ideal para principiantes o quienes buscan relajarse mientras disfrutan del paisaje natural.
                     </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
-                    <br>
-                    
-                </div>
-            </div>
-            
-            <div class="tarjeta">
-                <img 
-                src="../src/files/tour2.jpg" 
-                    alt="Tour2"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca de dorado</h2>
-                    <p class="descripcion">
-                        Embárcate en la búsqueda del codiciado pez dorado, famoso por su fuerza y espectacular salto, una experiencia imperdible para los amantes de la pesca deportiva.
-                    </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
-                    <br>
-                    
-                </div>
-            </div>
-            
-            <div class="tarjeta">
-                <img 
-                src="../src/files/tour3.jpg" 
-                alt="Tour3"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca deportiva en alta mar</h2>
-                    <p class="descripcion">
-                        Vive la emoción de atrapar especies grandes como marlín y pez vela en aguas profundas, acompañado de equipo profesional y guías expertos.
-                    </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
-                    <br>
-                    
-                </div>
-            </div>
-            <div class="tarjeta">
-                <img 
-                    src="../src/files/tour1.jpg" 
-                    alt="Tour2"
-                    >
-                    <div class="contenido">
-                        <h2 class="titulo">Pesca en laguna o río</h2>
-                        <p class="descripcion">
-                            Un tour tranquilo y familiar en aguas interiores, ideal para principiantes o quienes buscan relajarse mientras disfrutan del paisaje natural.
-                        </p>
-                        <button class="boton">
-                            Rentar Ahora
-                        </button>
-                        <br>
-                        
+                    <div class="card-actions justify-center mt-3">
+                    <button class="btn bg-orange-400 hover:bg-orange-500 text-white rounded-xl px-5">Rentar Ahora</button>
                     </div>
-                </div>
-                
-                <div class="tarjeta">
-                    <img 
-                    src="../src/files/tour2.jpg" 
-                    alt="Tour2"
-                    >
-                    <div class="contenido">
-                        <h2 class="titulo">Pesca de dorado</h2>
-                    <p class="descripcion">
-                        Embárcate en la búsqueda del codiciado pez dorado, famoso por su fuerza y espectacular salto, una experiencia imperdible para los amantes de la pesca deportiva.
-                    </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
                     <br>
-                    
                 </div>
             </div>
-            
-            <div class="tarjeta">
-                <img 
-                src="../src/files/tour3.jpg" 
-                alt="Tour3"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca deportiva en alta mar</h2>
-                    <p class="descripcion">
-                        Vive la emoción de atrapar especies grandes como marlín y pez vela en aguas profundas, acompañado de equipo profesional y guías expertos.
-                    </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
-                    <br>
                     
-                </div>
-            </div>
-            <div class="tarjeta">
-                <img 
-                src="../src/files/tour1.jpg" 
-                alt="Tour2"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca en laguna o río</h2>
-                    <p class="descripcion">
-                        Un tour tranquilo y familiar en aguas interiores, ideal para principiantes o quienes buscan relajarse mientras disfrutan del paisaje natural.
-                    </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
-                    <br>
-                    
-                </div>
-            </div>
-            
-            <div class="tarjeta">
-                <img 
+            <div class="card w-80 bg-white shadow-xl border border-[#0a1a44]/30">
+                <figure><img 
                 src="../src/files/tour2.jpg" 
                 alt="Tour2"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca de dorado</h2>
-                    <p class="descripcion">
+                class="h-48 w-full object-cover"
+                ></figure>
+                <div class="card-body text-left">
+                    <h2 class="card-title text-[#1c2d66]">Pesca de dorado</h2>
+                    <p class="text-sm">
                         Embárcate en la búsqueda del codiciado pez dorado, famoso por su fuerza y espectacular salto, una experiencia imperdible para los amantes de la pesca deportiva.
                     </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
+                    <div class="card-actions justify-center mt-3">
+                    <button class="btn bg-orange-400 hover:bg-orange-500 text-white rounded-xl px-5">Rentar Ahora</button>
+                    </div>
                     <br>
-                    
                 </div>
             </div>
-
-            <div class="tarjeta">
-                <img 
+            
+            <div class="card w-80 bg-white shadow-xl border border-[#0a1a44]/30">
+                <figure><img 
                 src="../src/files/tour3.jpg" 
-                    alt="Tour3"
-                >
-                <div class="contenido">
-                    <h2 class="titulo">Pesca deportiva en alta mar</h2>
-                    <p class="descripcion">
+                alt="Tour3" class="h-48 w-full object-cover"
+                ></figure>
+                <div class="card-body text-left">
+                    <h2 class="card-title text-[#1c2d66]">Pesca deportiva en alta mar</h2>
+                    <p class="text-sm">
                         Vive la emoción de atrapar especies grandes como marlín y pez vela en aguas profundas, acompañado de equipo profesional y guías expertos.
                     </p>
-                    <button class="boton">
-                        Rentar Ahora
-                    </button>
+                    <div class="card-actions justify-center mt-3">
+                    <button class="btn bg-orange-400 hover:bg-orange-500 text-white rounded-xl px-5">Rentar Ahora</button>
+                    </div>
                     <br>
                     
                 </div>
             </div>
         </section>
-    </div>
     </main>
-</main>
 </body>
 
 </html>

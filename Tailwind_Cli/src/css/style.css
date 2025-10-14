@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: "DM Serif Text";
+  src: url("../src/files/fontSerif/DMSerifText-Regular.ttf");
+}
 
 :root {
   --color-primario: #1c2d66;
@@ -14,7 +17,7 @@
   --espaciado-pequeño: 8px;
   --espaciado-medio: 15px;
   --espaciado-grande: 40px;
-  --fuente-base: Arial, sans-serif;
+  --fuente-base: "DM Serif Text";
   --linea-base: 1.6;
   --radio-boton: 20px;
   --radio-tarjeta: 15px;
@@ -49,6 +52,7 @@ header {
 
 header .logo img {
   width: 60px;
+  max-width: 60px;
 }
 
 nav {
@@ -539,6 +543,12 @@ input, textarea, label, select {
     font-size: 0.75rem;
     display: block;
   }
+
+  @media (min-width: 1024px) {
+  .logo img {
+    width: 80px; /* ligeramente más grande en escritorio */
+  }
+}
 }
 
 @import "tailwindcss";
