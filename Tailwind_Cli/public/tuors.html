@@ -10,48 +10,53 @@
     </head>
 
     <body class="font-serif text-[#222] bg-white leading-relaxed">
-        <header class="flex items-center gap-6 p-4">
-  
-  <div class="flex justify-center items-center">
-    <img
-      src="../src/files/logo.png"
-      alt="Logo Faby Tours"
-      class="object-contain rounded-full border-[#1c2d66]"
-      style="width: 60px; height: 60px;"
-    />
-  </div>
+    <header class="flex items-center justify-between gap-6 p-4">>
+        
+        <div class="flex justify-center items-center">
+            <img
+            src="../src/files/logo.png"
+            alt="Logo Faby Tours"
+            class="object-contain rounded-full border-[#1c2d66]"
+            style="width: 60px; height: 60px;"
+            />
+        </div>
 
-  <label for="menu-toggle"
-  class="bg-[#0a1a44] hover:bg-[#162970] text-white text-2xl rounded-full px-3 py-1 mt-4 cursor-pointer shadow-md lg:hidden flex items-center justify-center transition-colors duration-300">
-  ☰
-    </label>
-  
-  <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        <label for="menu-toggle"
+        class="bg-[#0a1a44] hover:bg-[#1c2d66] text-white text-2xl rounded-full px-3 py-1 mt-4 cursor-pointer shadow-md lg:hidden flex items-center justify-center transition-colors duration-300">
+        ☰
+            </label>
+        
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
 
-  <nav
-    class="fixed top-1/2 left-24 transform -translate-y-1/2 flex-col items-center bg-[#0a1a44] text-white rounded-xl shadow-lg peer-checked:flex hidden lg:flex transition-all duration-300">
-    <ul class="flex flex-col divide-y divide-[#0d1a4f]/60">
-      <li>
-        <a href="index.html"
-          class="block py-3 font-semibold hover:bg-[#22378a] rounded-t-2xl transition">Inicio</a>
-      </li>
-      <li class="relative group">
-        <a
-          class="block py-3 font-semibold bg-[#172558] rounded-none cursor-pointer transition">Experiencias</a>
-      
-        <ul
-          class="absolute left-full top-1/2 -translate-y-1/2 hidden group-hover:flex flex-col bg-white text-[#1c2d66] rounded-lg shadow-lg w-40 text-left transition-all duration-300">
-          <li><a href="tuors.html" class="px-4 py-2 hover:bg-gray-100 rounded-md">Tuor's</a></li>
-          <li><a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-md">Opiniones</a></li>
-          <li><a href="experience.html" class="px-4 py-2 hover:bg-gray-100 rounded-md">Registro</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" class="block py-3 font-semibold hover:bg-[#22378a] rounded-b-2xl transition">Contactos</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+        <nav
+            class="fixed top-16 left-4 right-4 flex-col items-stretch bg-[#1c2d66] text-white rounded-2xl shadow-2xl 
+            peer-checked:flex hidden lg:relative lg:top-auto lg:left-auto lg:right-auto lg:flex lg:flex-row lg:bg-[#1c2d66] 
+            lg:rounded-full lg:px-4 lg:py-2 lg:w-auto transition-all duration-300 z-50">
+            <ul class="flex flex-col lg:flex-row lg:items-center divide-y lg:divide-y-0 divide-white/20 w-full lg:w-auto">>
+            <li>
+                <a href="index.html"
+                class="block py-3 font-semibold hover:bg-[#22378a] rounded-t-2xl transition">Inicio</a>
+            </li>
+            <li class="relative group">
+                <a
+                class="block px-6 py-3 font-semibold bg-[#0a1845] cursor-pointer transition text-center lg:rounded-full lg:bg-transparent lg:hover:bg-[#0a1845]">Experiencias</a>
+            
+                <ul
+                class="absolute left-full top-1/2 -translate-y-1/2 hidden group-hover:flex flex-col bg-white text-[#1c2d66] rounded-lg shadow-lg w-40 text-left transition-all duration-300">
+                <li><a href="tuors.html" class="px-4 py-2 hover:bg-gray-100 rounded-md">Tuor's</a></li>
+                <li><a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-md">Opiniones</a></li>
+                <li><a href="experience.html" class="px-4 py-2 hover:bg-gray-100 rounded-md">Registro</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="block py-3 font-semibold hover:bg-[#22378a] rounded-b-2xl transition">Contactos</a>
+            </li>
+            </ul>
+        </nav>
+        <div class="hidden lg:flex items-center">
+        <input type="text" placeholder="Buscar..." class="px-4 py-2 rounded-full border border-gray-300 text-gray-600 focus:outline-none focus:border-[#1c2d66]" />
+        </div>
+    </header>
     <section class="hero">
         <img src="../src/files/fondo.jpg" alt="Lancha en la playa" class="w-full h-40 object-cover">
     </section>

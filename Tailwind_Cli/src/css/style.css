@@ -395,6 +395,13 @@ input, textarea, label, select {
     gap: 10px;
   }
 
+  .nav-link {
+        display: none;
+    }
+    .nav-link.active {
+        display: block;
+    }
+
   nav {
     position: relative;
     width: 100%;
@@ -543,12 +550,6 @@ input, textarea, label, select {
     font-size: 0.75rem;
     display: block;
   }
-
-  @media (min-width: 1024px) {
-  .logo img {
-    width: 80px; /* ligeramente más grande en escritorio */
-  }
-}
 }
 
 @import "tailwindcss";
