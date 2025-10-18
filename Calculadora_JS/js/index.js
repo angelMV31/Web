@@ -41,5 +41,4 @@ do{
     continuar = prompt("¿Deseas realizar otra operación? (si/no)").toLowerCase();
 }while(continuar == "si");
 
-alert("¡Gracias por usar la calculadora!");
-console.log("El usuario salió de la calculadora.");
+console.log("Salió de la calculadora.");
