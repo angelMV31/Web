@@ -11,6 +11,19 @@
     --color-texto-parrafo-especial: #27ae60;
 }
 
+.modo-oscuro {
+    --color-fondo: #181818;
+    --color-fondo-contenedor: #222;
+    --color-texto: #ffffff;
+    --color-enlace: lightblue;
+    --color-titulo: #ffcc00;
+    --color-fondo-lista: #2ecc71;
+    --color-fondo-cabecera: #2980b9;
+    --color-texto-tabla: #fff;
+    --color-fondo-parrafo-especial: #444;
+    --color-texto-parrafo-especial: #fff;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--color-fondo);
