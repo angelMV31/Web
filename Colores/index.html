@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipular DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="container">
+            <h1 id="titulo">Cambiar colores de fondo</h1>
+
+            <div class = "btns">
+
+                <button id="btnRojo" class ="btnRojo">Rojo</button>
+
+                <button id="btnVerde" class="btnVerde">Verde</button>
+
+                <button id="btnAzul" class="btnAzul">Azul</button>
+
+                <button id="btnReestablecer">Reestablecer</button>
+
+            </div>
+
+            <h2 id="subtitulo">!Haga click para cambiar mi color!</h2>
+        </div>
+        <script>
+
+            const titulo = document.getElementById('titulo');
+            const rojo = document.getElementById('btnRojo');
+            const verde = document.getElementById('btnVerde');
+            const azul = document.getElementById('btnAzul');
+            const reset = document.getElementById('btnReestablecer');
+
+            rojo.addEventListener('click', function() {
+                document.body.className = 'modo-rojo';
+                titulo.textContent = 'Botón rojo seleccionado';
+            });
+
+            verde.addEventListener('click', function() {
+                document.body.className = 'modo-verde';
+                titulo.textContent = 'Botón verde seleccionado';
+            });
+
+            azul.addEventListener('click', function() {
+                document.body.className = 'modo-azul';
+                titulo.textContent = 'Botón azul seleccionado';
+            });
+
+            reset.addEventListener('click', function() {
+                document.body.className = '';
+                titulo.textContent = 'Cambiar colores de fondo';
+            });
+
+        </script>
+
+</body>
+
+</html>
