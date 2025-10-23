@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="padre">
+        <button id="hijito">Click</button>
+        <button id="hijo2">Click 2</button>
+    </div>
+    <h2>Ejemplo: Agregar y eliminar elementos con teclado</h2>
+
+    <div id="contenedor"></div>
+    <script>
+
+        document.addEventListener('keydown', (e) => {
+            if(e.key.toLowerCase() === 'a') {
+                e.preventDefault();
+                agregarCaja();
+            }else if(e.key.toLowerCase() === 'e') {
+                e.preventDefault();
+                eliminarCaja();
+            }
+        });
+
+    </script>
+</body>
+</html>
