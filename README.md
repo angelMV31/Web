@@ -28,5 +28,3 @@
 - [Ejercicio #1 - Calculadora](/Calculadora_JS/index.html)
 - [Ejercicio #2 - Manipulación de estilos](/Colores/index.html)
 - [Ejercicio #3 - Calculadora visible](/Calculadora_Historial/index.html)
-- [Ejercicio #4 - Lista de tareas](/Lista_Tareas/index.html)
-
