@@ -2,7 +2,6 @@ const inputTarea = document.querySelector(".homework");
 const botonAgregar = document.querySelector(".button");
 const lista = document.getElementById("historial");
 
-// 🔹 Cargar tareas guardadas al iniciar
 document.addEventListener("DOMContentLoaded", cargarTareas);
 
 function agregarTarea() {

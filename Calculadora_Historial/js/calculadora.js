@@ -1,14 +1,10 @@
-const botones = document.querySelectorAll(".btn");
-const pantalla = document.getElementById("pantalla");
-const historial = document.getElementById("historial");
-
 let operacion = "";
 
-function actualizarPantalla() {
+export function actualizarPantalla(pantalla) {
     pantalla.value = operacion;
 }
 
-function calcular() {
+export function calcular(pantalla, historial) {
     
     if(operacion!="") {
 
@@ -57,7 +53,7 @@ function calcular() {
 
 }
 
-function igualOC(valor) {
+export function igualOC(valor, pantalla, historial) {
     if (valor === "C") {
         operacion = "";
         pantalla.value = "";
@@ -65,41 +61,38 @@ function igualOC(valor) {
     }
 
     if (valor === "=") {
-        calcular();
+        calcular(pantalla, historial);
         return;
     }
 
     operacion += valor;
-    actualizarPantalla();
+    actualizarPantalla(pantalla);
 }
 
-botones.forEach(boton => {
-    boton.addEventListener("click", () => igualOC(boton.value));
-});
+export function teclaOprimida(e, pantalla, historial){
 
-document.addEventListener("keydown", (event) => {
-    const tecla = event.key;
+    const tecla = e.key;
 
     if (!isNaN(tecla) || tecla === "+" || tecla === "-" || tecla === "*" || tecla === "/") {
         operacion += tecla;
-        actualizarPantalla();
+        actualizarPantalla(pantalla);
         return;
     }
 
     if (tecla === "Enter" || tecla === "=") {
-        event.preventDefault();
-        calcular();
+        e.preventDefault();
+        calcular(pantalla, historial);
         return;
     }
 
     if (tecla === "Backspace") {
         operacion = operacion.slice(0, -1);
-        actualizarPantalla();
+        actualizarPantalla(pantalla);
         return;
     }
 
     if (tecla.toLowerCase() === "c") {
         operacion = "";
-        actualizarPantalla();
+        actualizarPantalla(pantalla);
     }
-});
+};
