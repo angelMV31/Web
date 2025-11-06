@@ -19,3 +19,8 @@ export function updateButtons(currentPage, pageCount){
     document.getElementById('prevPage').disabled = currentPage === 1;
     document.getElementById('nextPage').disabled = pageCount <= currentPage;
 }
+
+export function updatePageInfo(currentPage, pageCount){
+    const pageInfo = document.getElementById('pageInfo');
+    pageInfo.textContent = `Página ${currentPage} de ${pageCount}`;
+}

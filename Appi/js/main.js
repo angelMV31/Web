@@ -1,8 +1,11 @@
 import { getBreeds} from './api.js';
-import { getBreeds, updateButtons, updatePageInfo } from './ui.js';
+import { showBreeds, updateButtons, updatePageInfo } from './ui.js';
+
+const limitInput = document.getElementById('limitInput');
+const updateLimitButton = document.getElementById('updateLimitButton');
 
 let currentPage = 1;
-let limit = 5;
+let limit = limitInput ? parseInt(limitInput.value) : 5;
 let totalPages = 1;
 
 async function loadBreeds(page) {
@@ -25,8 +28,8 @@ document.getElementById('nextPage').addEventListener('click', () => {
     loadBreeds(currentPage);
 })
 
-document.getElementById('limitSelect').addEventListener('change', (event) => {
-    limit = parseInt(event.target.value);
+updateLimitButton.addEventListener('click', () => {
+    limit = parseInt(limitInput.value);
     currentPage = 1;
     loadBreeds(currentPage, limit);
 });
